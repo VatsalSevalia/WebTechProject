@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customize Your Guitar - Proficient Guitars</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="Images/Logo/Logo.png">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- website logo -->
+                    <img src="Images/Logo/Logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="customize.html">Customize</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- cart icon --><a href="customize cart.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" width="30px" height="30px"></i></a>
+                <img src="Images/Icons/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        
+        <!-- cart items details -->
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Guitar Body Materials</th>
+                    <th></th>
+                    <th></th>
+                </tr>  
+            </table>
+            <div class="row">
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Rosewood.jpg" id="imgClickAndChange" onclick="changeImage()">
+                    <h4 class="alignment">Rose Wood</h4>
+                    <p >$49.99</p>
+                    </a>
+                </div>
+            
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Ash.jpg">
+                    <h4 class="alignment">Ash Wood</h4>
+                    <p >$29.99</p>
+                    </a>
+                </div>
+            
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Basswood.jpg">
+                    <h4 class="alignment">Bass Wood</h4>
+                    <p >$29.99</p>
+                    </a>
+                </div>
+                
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Poplar.jpg">
+                    <h4 class="alignment">Poplar Wood</h4>
+                    <p >$39.99</p>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Mahagony.jpg">
+                    <h4 class="alignment">Mahagony Wood</h4>
+                    <p >$49.99</p>
+                    </a>
+                </div>
+            
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Maple.jpeg">
+                    <h4 class="alignment">Maple Wood</h4>
+                    <p >$39.99</p>
+                    </a>
+                </div>
+            
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Nickel-Plated Steel.jpg">
+                    <h4 class="alignment">Nickel-Plated Steel</h4>
+                    <p >$39.99</p>
+                    </a>
+                </div>
+                
+                <div class="col-4 img-size">
+                    <img src="Images/Material/Carbon Fibre.jpg">
+                    <h4 class="alignment">Carbon Fibre</h4>
+                    <p >$59.99</p>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row alignme">
+                <div class="col-2 alignme">
+                    <h3>Select Guitar Material<br></h3></br></h3>
+                    <select>
+                        <option>Choose a Material</option>
+                        <option>Rose Wood</option>
+                        <option>Ash Wood</option>
+                        <option>Bass Wood</option>
+                        <option>Poplar Wood</option>
+                        <option>Mahagony Wood</option>
+                        <option>Maple Wood</option>
+                        <option>Nickel-Plated Steel</option>
+                        <option>Carbon Fibre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            
+            
+            <table>
+                <tr>
+                    <th>Print Design</th>
+                    <th></th>
+                    <th></th>
+                </tr>  
+            </table>
+
+            <div class="row">
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Colors.jpg">
+                    <h4 class="alignment">Colors</h4>
+                    <p >$9.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Deep Space.jpg">
+                    <h4 class="alignment">Deep Space</h4>
+                    <p >$9.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Roses.jpg">
+                    <h4 class="alignment">Roses</h4>
+                    <p >$9.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Random Print.jpg">
+                    <h4 class="alignment">Minimal</h4>
+                    <p >$19.99</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Kakashi.jpg">
+                    <h4 class="alignment">Kakashi</h4>
+                    <p >$19.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/L.jpg">
+                    <h4 class="alignment">L</h4>
+                    <p >$4.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Paint.jpg">
+                    <h4 class="alignment">Paint</h4>
+                    <p >$9.99</p>
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Prints/Sparkles.jpg">
+                    <h4 class="alignment">Sparkles</h4>
+                    <p >$9.99</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row alignme">
+                <div class="col-2 alignme">
+                    <h3>Select Print Design from Above or <br> Add your custom image below</h3></br></h3>
+                    <select>
+                        <option>Choose a Print</option>
+                        <option>Colors</option>
+                        <option>Deep Space</option>
+                        <option>Roses</option>
+                        <option>Minimal</option>
+                        <option>Kakashi</option>
+                        <option>L</option>
+                        <option>Paint</option>
+                        <option>Sparkles</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Print Your Custom Design</th>
+                    <th></th>
+                    <th></th>
+                </tr>  
+            </table>
+            
+            <div class="row alignme">
+                <div class="col-3 alignme">
+                    <input type="file" name="filename" accept="image/gif, image/jpeg, image/png" class="btn1 alignme">
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h3>Ratio should <i>1:1</i></h3>
+                    
+                    <h3>Image should be of at least <i>2K</i> resolution</h3>
+                    </a>
+                </div> 
+            </div>
+            <div class="row alignme">
+                <div class="col-2">
+                    <p>Price: $24.99 for Acoustic Guitars</p>
+                    <input type="radio" name="Guitar" value="Guitar" checked="checked">
+                </div>
+                <div class="col-2">
+                    <p >Price: $29.99 for Electric Guitars</p>
+                    <input type="radio" name="Guitar" value="Guitar">
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Electronic Add-ons</th>
+                    <th></th>
+                    <th></th>
+                </tr>  
+            </table>
+
+            <div class="row">
+                <div class="col-4 img-size">
+                    <img src="Images/Electronic Devices/Mixer.jpg">
+                    <h4 class="alignment">Proficient Inbuilt Mixer</h4>
+                    <p >$99.99</p>
+                    <input type="checkbox">
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Electronic Devices/Amp in.jpg">
+                    <h4 class="alignment">Proficient Inbuilt Tuner</h4>
+                    <p >$29.99</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Electronic Devices/String input.jpg">
+                    <h4 class="alignment">String Tension Adjuster</h4>
+                    <p >$69.99</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    </a>
+                </div>
+                <div class="col-4 img-size">
+                    <img src="Images/Electronic Devices/Smart Chip.jpg">
+                    <h4 class="alignment">Smart Guitar Motherboard</h4>
+                    <p >$149.99</p>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 alignme">
+                    <a href="customize cart.html" class="btn">Payment</a>
+
+                </div>
+            </div> 
+            
+            
+
+        </div>
+
+        
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 c1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="Images/Logo/app-store.png" alt="">
+                            <img src="Images/Logo/play-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 c2">
+                        <img src="Images/Logo/Logoa.png" class="foot-img">
+                        <p>Get Your Perfect Guitar Today <br> at Proficient Guitar</p>
+                    </div>
+                    <div class="col-4 c4">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <a href="https://www.facebook.com/anil.viramgama"><li>FaceBook</li></a>
+                            <a href="https://www.instagram.com/the.guitar.guy_/"><li>Instagram</li></a>
+                            <a href="https://www.youtube.com/channel/UCaPkHO9yohalls1E7gZsA4Q"><li>Youtube</li></a>
+                            <a href="https://twitter.com/pavallion"><li>Twitter</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright to @Proficient Guitars</p>
+            </div>
+        </div>
+
+        <!-- js for toggle menu -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+        <!-- js for on click image select -->
+        <script>
+            function changeImage(){
+                if (document.getElementById("imgClickAndChange").src == "Images/Material/Rosewood.jpg"){
+                    document.getElementById("imgClickAndChange").src = "Images/Material/Ash.jpg";
+                }
+                else{
+                    document.getElementById("imgClickAndChange").src = "Images/Material/Rosewood.jpg";
+                }
+            }
+        </script>
+
+    </body>
+</html>

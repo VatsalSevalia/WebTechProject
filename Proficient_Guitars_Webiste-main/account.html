@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up/In - Proficient Guitars</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="Images/Logo/Logo.png">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- website logo -->
+                    <img src="Images/Logo/Logo.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="customize.html">Customize</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- cart icon --><a href="account.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true" width="30px" height="30px"></i></a>
+                <img src="Images/Icons/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        
+        
+        <!-- ---------account page--------- -->
+        <div class="account-page">
+            <div class="container">
+                <div class="title">
+                    <h1>My Account</h1>
+                </div>
+                <div class="row">
+                    <div class="col-2-account col-sm-2" style="text-align: center;">
+                        <img src="Images/Models/Pathik.jpg" class="userphoto">
+                    </div>
+                    <div class="col-2-account col-sm-8" style="text-align: center;">
+                        <h1 class="colors2">Welcome Back 
+                            <div class="colors">
+                                Mr. Pathik
+                            </div>
+                        </h1> 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 text-center" style="text-align: center;">
+                        <a href=""><div class="btn">Product</div></a>
+                    </div>
+                
+                    <div class="col-4 text-center">
+                        <a href=""><div class="btn">Customized</div></a>
+                    </div>
+                
+                    <div class="col-4 text-center">
+                        <a><div class="btn">Contact US</div></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href=""><div class="btn">Orders</div></a>
+                    </div>
+                
+                    <div class="col-4 text-center">
+                        <a href=""><div class="btn">Account  Details</div></a>
+                    </div>
+                
+                    <div class="col-4 text-center   ">
+                        <a href="account.html"><div class="btn">Logout</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 c1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="Images/Logo/app-store.png" alt="">
+                            <img src="Images/Logo/play-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 c2">
+                        <img src="Images/Logo/Logoa.png" class="foot-img">
+                        <p>Get Your Perfect Guitar Today <br> at Proficient Guitar</p>
+                    </div>
+                    <div class="col-4 c4">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <a href="https://www.facebook.com/anil.viramgama"><li>FaceBook</li></a>
+                            <a href="https://www.instagram.com/the.guitar.guy_/"><li>Instagram</li></a>
+                            <a href="https://www.youtube.com/channel/UCaPkHO9yohalls1E7gZsA4Q"><li>Youtube</li></a>
+                            <a href="https://twitter.com/pavallion"><li>Twitter</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright to @Proficient Guitars</p>
+            </div>
+        </div>
+
+        <!-- js for toggle menu -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+        <!-- js for toggle form -->
+        <script>
+            var loginform = document.getElementById("login");
+            var registerform = document.getElementById("register");
+            var Indicator = document.getElementById("indicator")
+
+            function register(){
+                registerform.style.transform = "translateX(0px)";
+                loginform.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+
+            function login(){
+                registerform.style.transform = "translateX(300px)";
+                loginform.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation - Proficient Guitars</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="Images/Logo/Logo.png">
+        
+        
+    </head>
+
+    <body>
+        <div class="head">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <!-- website logo -->
+                        <img src="Images/Logo/Logo.png" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="customize.html">Customize</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <!-- cart icon --><a href="cart.html">
+                    <i class="fa fa-shopping-cart" aria-hidden="true" width="30px" height="30px"></i></a>
+                    <img src="Images/Icons/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+
+        <div class="small-container alignme">
+            <h1 class="title">Congratualtions!</h1>
+            <div class="row">
+                <h1>Your Order has been Confirmed!</h1>
+            </div>
+            <div class="row">
+                <h4>Thank You for Shopping with <br>@Proficient Guitars</h4>
+            </div>
+            <div class="row">
+                <a href="#"><div class="btn2">Track Your Order</div></a>
+                
+            </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 c1">
+                        <h3>Download our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="Images/Logo/app-store.png" alt="">
+                            <img src="Images/Logo/play-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4 c2">
+                        <img src="Images/Logo/Logoa.png" class="foot-img">
+                        <p>Get Your Perfect Guitar Today <br> at Proficient Guitar</p>
+                    </div>
+                    <div class="col-4 c4">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <a href="https://www.facebook.com/anil.viramgama"><li>FaceBook</li></a>
+                            <a href="https://www.instagram.com/the.guitar.guy_/"><li>Instagram</li></a>
+                            <a href="https://www.youtube.com/channel/UCaPkHO9yohalls1E7gZsA4Q"><li>Youtube</li></a>
+                            <a href="https://twitter.com/pavallion"><li>Twitter</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright to @Proficient Guitars</p>
+            </div>
+        </div>
+
+        <!-- js for toggle menu -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
